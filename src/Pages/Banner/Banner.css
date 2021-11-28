@@ -17,6 +17,11 @@
     border-radius: 50%;
     border: 10px solid #ff5d56;
     background: rgba(255,255,255,0.3);
+    transform: rotate(-94deg);
+    -webkit-transform: rotate(-94deg);
+    -moz-transform: rotate(-94deg);
+    -ms-transform: rotate(-94deg);
+    -o-transform: rotate(-94deg);
 }
 .banner-content p, .banner-content h1, .banner-content h4 {
     color: #eee;
