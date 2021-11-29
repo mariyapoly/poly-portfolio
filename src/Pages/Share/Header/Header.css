@@ -4,7 +4,7 @@ nav.navbar {
     left: 0;
     right: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: #191c26;
     z-index: 999;
     padding: 20px 0;
 }
