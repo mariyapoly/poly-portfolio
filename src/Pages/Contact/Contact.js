@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { useForm, ValidationError } from '@formspree/react';
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 import './Contact.css';
 
 
 const Contact = () => {
 
-    const [state, handleSubmit] = useForm("xknywznn");
+    const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    console.log(handleSubmit)
+        emailjs.sendForm('service_pljelah', 'template_calfyfx', form.current, 'user_x6F1DOmumFKUKHy0bxzw6')
+            .then((result) => {
+                if (result.text) {
+                    swal("Email Send Successfully");
+                };
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    };
+
 
     return (
         <div className="contact-area">
@@ -65,33 +78,14 @@ const Contact = () => {
                     <Col lg={8}>
                         <div className="contact-right">
                             <p>If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p>
+                            <form ref={form} onSubmit={sendEmail}>
+                                <input type="text" placeholder="Your Name" name="name" className="form-control" />
+                                <input type="eamil" placeholder="Your Email" name="email" className="form-control" />
+                                <input type="text" placeholder="Subject" name="subject" className="form-control" />
+                                <textarea type="text" placeholder="Your Message" name="message" className="form-control" ></textarea>
+                                <button className="regular-btn" type="submit">send message</button>
+                            </form>
                         </div>
-                        <form onSubmit={handleSubmit}>
-
-                            <input
-                                id="email"
-                                type="email"
-                                name="email"
-                            />
-                            <ValidationError
-                                prefix="Email"
-                                field="email"
-                                errors={state.errors}
-                            />
-                            <textarea
-                                id="message"
-                                name="message"
-                            />
-                            <ValidationError
-                                prefix="Message"
-                                field="message"
-                                errors={state.errors}
-                            />
-                            <button type="submit" disabled={state.submitting}>
-                                Submit
-                            </button>
-                            {state.succeeded && <p style={{ color: 'green' }}>Email send successfully</p>}
-                        </form>
                     </Col>
                 </Row>
             </Container>

@@ -43,3 +43,61 @@ nav.navbar .logo {
 .ms-auto.navbar-nav .regular-btn:hover {
     color: #fff;
 }
+/* ------ media query ------ */
+@media screen and (max-width:575px) {
+    nav.navbar {
+        background: rgba(255,255,255,0.9);
+        padding: 10px 0;
+    }
+    .ms-auto.navbar-nav {
+        padding: 20px;
+    }
+    nav.navbar .logo {
+        color: #ff5d56;
+    }
+    .ms-auto.navbar-nav a {
+        color: #ff5d56;
+        margin: 10px 0;
+    }
+    .ms-auto.navbar-nav a.regular-btn {
+        color: #fff;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    nav.navbar {
+        background: rgba(255,255,255,0.9);
+        padding: 10px 0;
+    }
+    .ms-auto.navbar-nav {
+        padding: 20px;
+    }
+    nav.navbar .logo {
+        color: #ff5d56;
+    }
+    .ms-auto.navbar-nav a {
+        color: #ff5d56;
+        margin: 10px 0;
+    }
+    .ms-auto.navbar-nav a.regular-btn {
+        color: #fff;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    nav.navbar {
+        background: rgba(255,255,255,0.9);
+        padding: 10px 0;
+    }
+    .ms-auto.navbar-nav {
+        padding: 20px;
+    }
+    nav.navbar .logo {
+        color: #ff5d56;
+    }
+    .ms-auto.navbar-nav a {
+        color: #ff5d56;
+        margin: 10px 0;
+    }
+    .ms-auto.navbar-nav a.regular-btn {
+        color: #fff;
+    }
+}

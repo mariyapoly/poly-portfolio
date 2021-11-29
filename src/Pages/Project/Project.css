@@ -42,6 +42,7 @@
 .project-thumbnail {
     box-shadow: 0 0px 5px 0 rgb(0 0 0 / 15%);
     position: relative;
+    margin-bottom: 30px;
 }
 .project-thumbnail img {
     width: 100%;
@@ -99,4 +100,45 @@
     margin: 0;
     padding: 8px 30px;
     font-size: 14px;
+}
+/* ------ media query ------ */
+@media screen and (max-width:575px) {
+    .project-area {
+        padding: 70px 0 50px;
+    }
+    .section-title p::before {
+        display: none;
+    }
+    .section-title p::after {
+        display: none;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    .section-title h2 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    .section-title p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .project-area {
+        padding: 70px 0 50px;
+    }
+    .section-title p::before {
+        display: none;
+    }
+    .section-title p::after {
+        display: none;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    .section-title h2 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    
 }

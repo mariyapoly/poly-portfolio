@@ -7,9 +7,10 @@ import {
 import './App.css';
 import AuthProvider from "./contexts/AuthProvider";
 import About from "./Pages/About/About";
-import Contact from "./Pages/Contact/Contact";
+import ContactMe from "./Pages/ContactMe/ContactMe";
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import Footer from "./Pages/Share/Footer/Footer";
 import Header from "./Pages/Share/Header/Header";
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactMe />} />
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </AuthProvider>
   )

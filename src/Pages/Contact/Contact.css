@@ -1,5 +1,6 @@
 .contact-area {
     padding: 100px 0 115px;
+    background: #f1f1f1;
 }
 .contact-info {
     margin-bottom: 30px;
@@ -40,4 +41,107 @@ p.contact-title {
     color: #666;
     opacity: 0.8;
     font-size: 15px;
+}
+.contact-right p {
+    margin-left: 35px;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+.contact-right form input,.contact-right form textarea {
+    width: 45%;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px 25px;
+    border-radius: 35px;
+    color: #495057;
+    outline: none;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+.contact-right form input:focus, .contact-right form textarea:focus{
+    box-shadow: none;
+    border: 1px solid #ff5d56;
+}
+.contact-right form input:nth-child(3) {
+    width: 95%;
+}
+.contact-right form textarea {
+    width: 95%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.contact-right form button {
+    margin-left: 36px;
+}
+
+/* ------ media query ------ */
+@media screen and (max-width:575px) {
+    .contact-area {
+        padding: 70px 0 60px;
+    }
+    .contact-info {
+        margin-bottom: 21px;
+    }
+    .contact-info p {
+        font-size: 13px;
+    }
+    .contact-right p {
+        margin-left: 0;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    .contact-right form input, .contact-right form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact-right form input:nth-child(3) {
+        width: 100%;
+    }
+    .contact-right form button {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .contact-area {
+        padding: 70px 0 60px;
+    }
+    .contact-info {
+        margin-bottom: 21px;
+    }
+    .contact-right p {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .contact-right form input, .contact-right form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact-right form input:nth-child(3) {
+        width: 100%;
+    }
+    .contact-right form button {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .contact-info {
+        margin-bottom: 21px;
+    }
+    .contact-right p {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .contact-right form input, .contact-right form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact-right form input:nth-child(3) {
+        width: 100%;
+    }
+    .contact-right form button {
+        margin-left: 0;
+    }
 }

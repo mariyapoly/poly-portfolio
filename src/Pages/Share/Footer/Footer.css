@@ -1,0 +1,17 @@
+.footer-bg {
+    background: #191c26;
+    padding: 25px 0;
+    text-align: center;
+}
+.footer-bg p  {
+    color: #eee;
+}
+
+
+/* ------ media query ------ */
+@media screen and (max-width:575px) {
+    .footer-bg p  {
+        font-size: 15px;
+    }
+    
+}
