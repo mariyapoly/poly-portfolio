@@ -13,8 +13,8 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/portfolio">Portfolio</Link>
+                        {/* <Link to="/about">About</Link>
+                        <Link to="/portfolio">Portfolio</Link> */}
                         <Link to="/contact">Contact</Link>
                         <a target="_blank" className="regular-btn" href="https://drive.google.com/file/d/1EvEuQxbZOZ7hkoInXwtlgAAAzQKFxxVE/view?usp=sharing" rel="noopener noreferrer">download resume</a>
                     </Nav>
