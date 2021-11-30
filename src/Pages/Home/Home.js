@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.css';
 import Banner from '../Banner/Banner';
-import Project from '../Project/Project';
 import Contact from '../Contact/Contact';
 import About from '../About/About'
+import AllProducts from '../AllProducts/AllProducts';
+import Skills from '../Skills/Skills';
 
 const Home = () => {
 
@@ -11,7 +12,8 @@ const Home = () => {
         <>
             <Banner></Banner>
             <About></About>
-            <Project></Project>
+            <Skills></Skills>
+            <AllProducts></AllProducts>
             <Contact></Contact>
         </>
     );

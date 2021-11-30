@@ -79,10 +79,10 @@ const Contact = () => {
                         <div className="contact-right">
                             <p>If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p>
                             <form ref={form} onSubmit={sendEmail}>
-                                <input type="text" placeholder="Your Name" name="name" className="form-control" />
-                                <input type="eamil" placeholder="Your Email" name="email" className="form-control" />
-                                <input type="text" placeholder="Subject" name="subject" className="form-control" />
-                                <textarea type="text" placeholder="Your Message" name="message" className="form-control" ></textarea>
+                                <input required type="text" placeholder="Your Name*" name="name" className="form-control" />
+                                <input required type="eamil" placeholder="Your Email*" name="email" className="form-control" />
+                                <input required type="text" placeholder="Subject*" name="subject" className="form-control" />
+                                <textarea required type="text" placeholder="Your Message*" name="message" className="form-control" ></textarea>
                                 <button className="regular-btn" type="submit">send message</button>
                             </form>
                         </div>

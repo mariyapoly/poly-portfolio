@@ -1,6 +1,5 @@
 .about-area {
     padding: 100px 0 145px;
-    background-color: #f1f1f1;
 }
 .about-info ul {
     list-style: none;
@@ -59,7 +58,6 @@
 @media screen and (max-width:575px) {
     .about-area {
         padding: 65px 0 90px;
-        background-color: #f1f1f1;
     }
     .about-info {
         flex-direction: column;
@@ -95,7 +93,6 @@
 @media screen and (min-width:576px) and (max-width:767px) {
     .about-area {
         padding: 65px 0 90px;
-        background-color: #f1f1f1;
     }
     .about-info {
         flex-direction: column;
@@ -131,7 +128,6 @@
 @media screen and (min-width:768px) and (max-width:991px) {
     .about-area {
         padding: 65px 0 90px;
-        background-color: #f1f1f1;
     }
     .about-info {
         flex-direction: column;

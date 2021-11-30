@@ -1,9 +1,16 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router';
 import myImg from '../../images/my-img-1.png';
 import './About.css'
 
 const About = () => {
+
+    const navigate = useNavigate();
+
+    const handleCoutBtn = () => {
+        navigate('/about')
+    }
 
     return (
         <div className="about-area">
@@ -31,7 +38,7 @@ const About = () => {
                             </ul>
                         </div>
                         <div className="about-btn">
-                            <button className="regular-btn">more about me</button>
+                            <button onClick={handleCoutBtn} className="regular-btn">more about me</button>
                         </div>
                     </Col>
                     <Col lg={5} md={5}>

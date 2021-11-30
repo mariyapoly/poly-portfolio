@@ -1,0 +1,53 @@
+.skill-area {
+    background: #f1f1f1;
+    padding: 100px 0 80px;
+}
+.progress-bar {
+    background-color: #ff5d56;
+    transition: width .6s ease;
+}
+.progress {
+    height: 11px;
+    background-color: rgb(182, 177, 177);
+    font-size: 12px;
+}
+.skill {
+    width: 50%;
+}
+.single-skill {
+    margin-bottom: 30px;
+}
+
+.single-skill p {
+    margin-bottom: 8px;
+}
+.all-skill1 {
+    margin-right: 30px;
+}
+.all-skill2 {
+    margin-left: 30px;
+}
+
+/* ------ media query ------ */
+@media screen and (max-width:575px) {
+    .skill-area {
+        padding: 71px 0 50px;
+    }
+    .all-skill2 {
+        margin-left: 0;
+    }
+    .all-skill1 {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .skill-area {
+        padding: 71px 0 50px;
+    }
+    .all-skill2 {
+        margin-left: 0;
+    }
+    .all-skill1 {
+        margin-right: 0;
+    }
+}
