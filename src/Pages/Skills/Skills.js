@@ -17,7 +17,7 @@ const Skills = () => {
             <Container>
                 <div className="section-title">
                     <h2>my <span>skills</span></h2>
-                    <p>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.</p>
+                    <p>I am working on a professional, visually sophisticated, and technologically.</p>
                 </div>
                 <Row>
                     <Col lg={6} md={6}>

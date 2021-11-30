@@ -21,6 +21,7 @@
     opacity: 0.8;
     position: relative;
     display: inline-block;
+    text-transform: uppercase;
 }
 .section-title p::before {
     position: absolute;
