@@ -103,6 +103,13 @@
     padding: 8px 30px;
     font-size: 14px;
 }
+.project-info .regular-btn.btn-2:hover {
+    border-color: #555;
+}
+.project-info .regular-btn.btn-2:before {
+    background-color: #555;
+    border-color: #555;
+}
 /* ------ media query ------ */
 @media screen and (max-width:575px) {
     .project-area {
