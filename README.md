@@ -1,6 +1,6 @@
 # My Portfolio Live link
 
-## React 
+## React Project
 
 ### 1. Poly personal website
 Live Link (https://mst-poly-khatun.netlify.app/)
@@ -14,7 +14,7 @@ Live Link (https://car-dealer-74ce3.web.app/)
 ### 4. Alfred Travel
 Live Link (https://alfred-travel.web.app/)
 
-### html css
+## HTML CSS Project
 
 ### 5. eventoo
 Live Link (https://themeforest.net/item/eventoo-event-html-template/26408095?fbclid=IwAR0r4QwXpsLEqGF2nPzbGRGeSPLMzn-DBGkfZx-hoEbhPBRjOehbXe2xFdE)
