@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Project from "../Project/Project";
-import "./AllProducts.css";
 
-const AllProducts = () => {
+const MyProjects = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -13,7 +12,7 @@ const AllProducts = () => {
   }, []);
 
   return (
-    <div className="project-area">
+    <div className="project-area my-project">
       <Container>
         <div className="section-title">
           <h2>
@@ -33,4 +32,4 @@ const AllProducts = () => {
   );
 };
 
-export default AllProducts;
+export default MyProjects;
